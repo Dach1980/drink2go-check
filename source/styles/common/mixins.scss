@@ -14,3 +14,10 @@
   font-size: $font-size;
   line-height: $line-height;
 }
+
+@mixin bold-font ($font-size, $line-height) {
+  font-family: $bold-font-family;
+  font-weight: 700;
+  font-size: $font-size;
+  line-height: $line-height;
+}

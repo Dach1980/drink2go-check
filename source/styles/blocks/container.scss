@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: $mobile-width;
 
+
   // &.features__wrapper,
   // &.programs__wrapper,
   // &.example__wrapper,
@@ -40,13 +41,16 @@
 
     // &.page__wrapper,
     // &.promo__wrapper,
-    // &.features__wrapper,
+    &.features__wrapper {
+      width: calc($desktop-width - 80px);
+    }
+
     // &.programs__wrapper,
     // &.example__wrapper,
     // &.subscribe,
-    // &.basic-products__wrapper {
-    //   width: calc($desktop-width - 220px);
-    // }
+    &.hero__wrapper {
+      width: calc($desktop-width - 210px);
+    }
 
     // &.contacts__wrapper {
     //   width: 566px;

@@ -1,2 +1,4 @@
 /* здесь подключите шрифты */
-@include font-face("Lato", 400, normal, url("../../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"));
+@include font-face("Montserrat", 400, normal, url("../../fonts/montserrat/Montserrat-Regular.woff2") format("woff2"));
+
+@include font-face("MontserratBold", 700, normal, url("../../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"));

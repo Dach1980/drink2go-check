@@ -1,0 +1,25 @@
+.button {
+  @include primary-font (16px, 20px); // $font-size, $line-height
+  color: var(--white, #ff6347);
+  background-color: var(--base-primary, #ff6347);
+  width: $mobile-content;
+  cursor: pointer;
+  border: none;
+
+
+  @media (min-width: $tablet-width) {
+    @include primary-font (16px, 1.5); // $font-size, $line-height
+    width: 113px;
+    padding: 8px 20px;
+    border-radius: 4px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
+}

@@ -73,9 +73,54 @@
   </div>
 
   <main class="main-container" data-test="main">
-    <section class="promo" data-test="hero">
-      <div class="promo__wrapper container">
+    <section class="hero" data-test="hero">
+      <div class="hero__wrapper container">
+        <span class="hero__promo">Новинка!</span>
+        <h1 class="hero__title">Декаф Флэт Уайт</h1>
+        <p class="hero__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+        <div class="hero__image-wrapper">
+          <picture>
+            <!-- <source media="(min-width: 1440px)" type="image/webp" width="552" height="499" srcset="images/hero/hero-desktop@1x.webp, images/hero/hero-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp" width="709" height="609" srcset="images/promo-food-can-tablet@1x.webp, images/promo-food-can-tablet@2x.webp 2x">
+            <source type="image/webp" width="280" height="270" srcset="images/promo-food-can-mobile@1x.webp, images/promo-food-can-mobile@2x.webp 2x"> -->
+            <source media="(min-width: 1440px)" width="600" height="600" type="image/png" srcset="images/hero/hero-desktop@1x.png 1x, images/hero/hero-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="476" height="476" type="image/png" srcset="images/hero/hero-tablet@1x.png 1x, images/hero/hero-tablet@2x.png 2x">
+            <img class="hero__image" src="images/hero/hero-mobile@1x.png" width="280" height="280" srcset="images/hero/hero-mobile@2x.png 2x" alt="Большая банка кофе в алюминевой банке" loading="lazy">
+          </picture>
+        </div>
+        <div class="hero-price-wrapper">
+          <span class="hero-old-price">295₽</span>
+          <span class="hero-new-price">225₽</span>
+          <a class="hero__link button" href="#">Заказать</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="features">
+      <div class="features__wrapper container">
+        <span class="features__promo">Преимущества</span>
+        <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+        <ol class="features__list">
+          <li class="features__item features__speed">
+            <h3 class="features__name">Скорость</h3>
+            <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="features__item features__fit">
+            <h3 class="features__name">Удобство</h3>
+            <p class="features__description">Легко помещается и в карман,
+и в маленькую сумочку</p>
+          </li>
+          <li class="features__item features__energy">
+            <h3 class="features__name">Бодрость</h3>
+            <p class="features__description">
+Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="features__item features__eco">
+            <h3 class="features__name">Экологичность</h3>
+            <p class="features__description">Вся упаковка сделана
+из перерабатываемых материалов</p>
+          </li>
+        </ol>
       </div>
     </section>
 
