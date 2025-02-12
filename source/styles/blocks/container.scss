@@ -1,0 +1,55 @@
+.container {
+  margin: 0 auto;
+  width: $mobile-width;
+
+  // &.features__wrapper,
+  // &.programs__wrapper,
+  // &.example__wrapper,
+  // &.contacts__wrapper,
+  // &.subscribe {
+  //   width: calc($mobile-width - 40px);
+  // }
+
+  // &.page__wrapper,
+  // &.promo__wrapper,
+  // &.basic-products__wrapper {
+  //   width: 100%;
+  // }
+
+  @media (min-width: $tablet-width) {
+    width: calc($tablet-width - 60px);
+
+    // &.page__wrapper,
+    // &.promo__wrapper,
+    // &.features__wrapper,
+    // &.programs__wrapper,
+    // &.example__wrapper,
+    // &.contacts__wrapper,
+    // &.basic-products__wrapper,
+    // &.subscribe {
+    //   width: calc($tablet-width - 60px);
+    // }
+
+    // &.subscribe {
+    //   width: 632px;
+    // }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc($desktop-width - 80px);
+
+    // &.page__wrapper,
+    // &.promo__wrapper,
+    // &.features__wrapper,
+    // &.programs__wrapper,
+    // &.example__wrapper,
+    // &.subscribe,
+    // &.basic-products__wrapper {
+    //   width: calc($desktop-width - 220px);
+    // }
+
+    // &.contacts__wrapper {
+    //   width: 566px;
+    // }
+  }
+}

@@ -1,1 +1,17 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  @include primary-font (16px, 18px); // $font-size, $line-height
+  margin: 0;
+  color: var(--gray-darken, #ff6347);
+  background-color: var(--white, #ff6347);
+}
