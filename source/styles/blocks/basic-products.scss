@@ -7,3 +7,256 @@
   //   display: block;
   // }
 }
+
+.basic-products__header {
+  margin: 0 auto;
+}
+
+.basic-products__promo {
+  display: block;
+  @include bold-font (12px, 1.33); // $font-size, $line-height
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--base-primary, #ff6347);
+  // text-align: center;
+  // margin: 0;
+  // padding: 0;
+  // padding-top: 27px;
+  // padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include bold-font(12px, 1.33); // $font-size, $line-height
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--base-primary, #ff6347);
+    text-align: center;
+    margin: 0;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include bold-font (12px, 1.33); // $font-size, $line-height
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--base-primary, #ff6347);
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+.basic-products__list--wrapper {
+  background-color: var(--bg-lightest-grey, #ff6347);
+}
+
+.basic-products__title {
+  // display: block;
+  @include bold-font (12px, 1.33); // $font-size, $line-height
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  // text-transform: uppercase;
+  color: var(--base-primary, #ff6347);
+  // text-align: center;
+  // margin: 0;
+  // padding: 0;
+  // padding-top: 27px;
+  // padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include bold-font(12px, 1.33); // $font-size, $line-height
+    letter-spacing: 0.04em;
+    // text-transform: uppercase;
+    color: var(--base-primary, #ff6347);
+    text-align: center;
+    margin: 0;
+    // background-color: var(--white, #ff6347);
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include bold-font (42px, 1.52); // $font-size, $line-height
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--black, #ff6347);
+    // margin: 0 auto;
+    // background-color: var(--white, #ff6347);
+    // padding-top: 100px;
+  }
+}
+
+.basic-products__block {
+
+  @media (min-width: $desktop-width) {
+    width: 1359px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 318px 1011px;
+  }
+}
+
+.basic-products__find--block {
+  display: flex;
+  align-items: center;
+  float: right;
+  gap: 20px;
+}
+
+.basic-products__find--title {
+  @include primary-font (36px, 1); // $font-size, $line-height
+  color: var(--white, #ff6347);
+  text-align: center;
+  margin: 0;
+  // padding-top: 27px;
+  // padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include primary-font (56px, 1.43); // $font-size, $line-height
+    font-weight: 700;
+    text-align: center;
+    color: var(--black, #ff6347);
+    // background-color: var(--white, #ff6347);
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (16px, 1.5); // $font-size, $line-height
+    font-weight: 600;
+    text-align: left;
+    color: var(--black, #ff6347);
+    // padding-bottom: 16px;
+  }
+}
+
+.basic-products__find--select {
+  @include primary-font (16px, 1.43); // $font-size, $line-height
+  font-weight: 700;
+  text-align: center;
+  color: var(--black, #ff6347);
+  // background-color: var(--white, #ff6347);
+  // padding-top: 40px;
+  // padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (16px, 1.5); // $font-size, $line-height
+    border: none;
+    font-weight: 600;
+    width: 165px;
+    text-align: left;
+    color: var(--base-primary, #ff6347);
+  }
+}
+
+.basic-products__order {
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (14px, 1.43); // $font-size, $line-height
+    text-align: left;
+    display: grid;
+    grid-template-columns: 96px 141px;
+    // flex-direction: column;
+    // gap: 0;
+    // margin-bottom: 20px;
+  }
+}
+
+.basic-products__price {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (20px, 1.6); // $font-size, $line-height
+    font-weight: 600;
+    text-align: left;
+    // flex-direction: column;
+    // gap: 0;
+  }
+}
+
+.basic-products__button--block {
+  // display: flex;
+  // align-items: center;
+  // gap: 6px;
+  // @include primary-font (14px, 1.43); // $font-size, $line-height
+  // color: var(--white, #ff6347);
+  background-color: var(--base-primary, #ff6347);
+  // border: none;
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    width: 141px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 20px 75px;
+    gap: 6px;
+    border-radius: 4px;
+    // @include primary-font (14px, 1.43); // $font-size, $line-height
+    // padding: 8px 20px 8px 46px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
+  }
+}
+
+.basic-products__icon {
+  display: block;
+  grid-column: 1 / 2;
+}
+
+.basic-products__text {
+  display: block;
+  grid-column: 2 / -1;
+  border: none;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (14px, 1.43); // $font-size, $line-height
+    font-weight: 400;
+    text-align: left;
+    color: var(--white, #ff6347);
+  }
+}
+
+// .cards__button {
+  // @include primary-font (14px, 1.43); // $font-size, $line-height
+  // color: var(--white, #ff6347);
+  // background-color: var(--base-primary, #ff6347);
+  // border: none;
+  // padding: 10px 109px;
+  // cursor: pointer;
+  // grid-column: 1 / -1;
+  // grid-row: 2 / -1;
+  // text-transform: uppercase;
+
+  // @media (min-width: $tablet-width) {
+  //   padding: 10px 30px;
+  //   width: 250px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   border-radius: 4px;
+  //   @include primary-font (14px, 1.43); // $font-size, $line-height
+  //   padding: 8px 20px 8px 46px;
+  //   width: 141px;
+  // }
+
+  // &:hover {
+  //   background-color: #5eaa2f;
+  // }
+
+  // &:active {
+  //   background-color: #5eaa2f;
+  //   opacity: 0.3;
+  // }
+// }

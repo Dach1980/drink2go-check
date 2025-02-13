@@ -110,7 +110,7 @@
       <div class="features__wrapper container">
         <span class="features__promo">Преимущества</span>
         <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
-        <ol class="features__list">
+        <ul class="features__list">
           <li class="features__item features__speed">
             <h3 class="features__name">Скорость</h3>
             <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
@@ -130,358 +130,364 @@
             <p class="features__description">Вся упаковка сделана
               из перерабатываемых материалов</p>
           </li>
-        </ol>
+        </ul>
       </div>
     </section>
 
     <section class="basic-products">
       <div class="basic-products__wrapper container">
-        <span class="basic-products__promo">Каталог</span>
-        <h1 class="main-container__title">Каталог кофейных напитков</h1>
-
-        <section class="basic-products__filter catalog-filter" data-test="filter">
-          <h2 class="visually-hidden">Список выбора кофе</h2>
-          <form class="basic-products__form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter__group">
-              <legend class="catalog-filter__title">Цена</legend>
-
-              <div class="catalog-filter-range__wrapper">
-                <label class="catalog-filter-range__label">
-                  <input class="catalog-filter-range__field catalog-filter-range__from" type="number" value="0"
-                    placeholder="0" name="min-price">
-                </label>
-                <span class="catalog-filter-range__hyphen">от</span>
-                <label class="catalog-filter-range__label">
-                  <input class="catalog-filter-range__field catalog-filter-range__till" type="number" value="900"
-                    placeholder="900" name="max-price">
-                </label>
-                <div class="catalog-filter-range__scale">
-                  <div class="catalog-filter-range__bar" style="left: 0; width: 207px">
-                    <button class="catalog-filter-range__toggle catalog-filter-range__min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену</span>
-                    </button>
-                    <button class="catalog-filter-range__toggle catalog-filter-range__max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="basic-products-group__wrapper">
-              <legend class="basic-products-group__title">Наличие молока</legend>
-              <ul class="basic-products-group__list milk-filter">
-                <li class="basic-products-group__item">
-                  <label class="milk-filter__control">
-                    <input class="milk-filter__input visually-hidden" type="radio" name="milk-option" checked>
-                    <span class="milk-filter__checkbox"></span>
-                    <span class="milk-filter__title">Неважно</span>
-                  </label>
-                </li>
-                <li class="basic-products-group__item">
-                  <label class="milk-filter__control">
-                    <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
-                    <span class="milk-filter__checkbox"></span>
-                    <span class="milk-filter__title">Только животное</span>
-                  </label>
-                </li>
-                <li class="basic-products-group__item">
-                  <label class="milk-filter__control">
-                    <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
-                    <span class="milk-filter__checkbox"></span>
-                    <span class="milk-filter__title">Только растительное</span>
-                  </label>
-                </li>
-                <li class="basic-products-group__item">
-                  <label class="milk-filter__control">
-                    <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
-                    <span class="milk-filter__checkbox"></span>
-                    <span class="milk-filter__title">Без молока</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="basic-products-group__wrapper">
-              <legend class="basic-products-group__title">Страна произрастания</legend>
-              <ul class="basic-products-group__list country-filter">
-                <li class="basic-products-group__item">
-                  <label class="country-filter__control">
-                    <input class="country-filter__input visually-hidden" type="checkbox" name="brazil" value="brazil"
-                      checked>
-                    <span class="country-filter__checkbox"></span>
-                    <span class="country-filter__title">Бразилия</span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item type-housing-item">
-                  <label class="country-filter__control">
-                    <input class="country-filter__input visually-hidden" type="checkbox" name="ethiopia"
-                      value="ethiopia">
-                    <span class="country-filter__checkbox"></span>
-                    <span class="country-filter__title">Эфиопия</span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item type-housing-item">
-                  <label class="country-filter__control">
-                    <input class="country-filter__input visually-hidden" type="checkbox" name="colombia"
-                      value="colombia">
-                    <span class="country-filter__checkbox"></span>
-                    <span class="country-filter__title">Колумбия</span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item type-housing-item">
-                  <label class="country-filter__control">
-                    <input class="country-filter__input visually-hidden" type="checkbox" name="costa rica"
-                      value="costa rica">
-                    <span class="country-filter__checkbox"></span>
-                    <span class="country-filter__title">Коста-Рика</span>
-                  </label>
-                </li>
-                <li class="catalog-filter-item type-housing-item">
-                  <label class="country-filter__control">
-                    <input class="country-filter__input visually-hidden" type="checkbox" name="peru" value="peru">
-                    <span class="country-filter__checkbox"></span>
-                    <span class="country-filter__title">Перу</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <div class="catalog-filter-button-block">
-              <button class="button__submit" type="submit">Применить</button>
-              <button class="button__reset" type="reset">Сбросить</button>
-            </div>
-          </form>
-        </section>
-
-        <div class="basic-products__list--wrapper">
-          <div class="basic-products__find--block">
-            <h2 class="basic-products__find--title">Сортировка:</h2>
-            <select class="basic-products__find--select" aria-label="Сортировка">
-              <option value="default">по умолчанию</option>
-              <option value="cheap">cначала дешёвые</option>
-              <option value="expensive">cначала дорогие</option>
-              <option value="popular">cначала популярные</option>
-            </select>
-          </div>
-          <ul class="basic-products__list cards">
-            <li class="cards__item">
-              <div class="cards__link-wrapper">
-                <a class="cards__link" href="#">
-                  <picture>
-                    <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
-            <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-desktop-1@1x.png 1x, images/catalog/catalog-can-desktop-1@2x 2x">
-                    <source media="(min-width: 768px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-tablet-1@1x.png 1x, images/catalog/catalog-can-tablet-1@2x.png 2x">
-                    <img class="cards__link-image" src="images/catalog/catalog-can-mobile-1@1x.png" width="130" height="188" srcset="images/catalog/catalog-can-mobile-1@2x.png 2x"
-                      alt="Кофе в белой алюминевой банке" loading="lazy">
-                  </picture>
-                </a>
-                <div class="cards__text">
-                  <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Декаф Флэт Уайт</h3>
-                  </a>
-                  <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                </div>
-                <div class="basic-products__order">
-                  <span class="basic-products__price">225₽</span>
-                  <div class="basic-products__button--block">
-                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="basic-products__icon" aria-hidden="true" focusable="false" fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
-                        fill="white" />
-                    </svg>
-                    <button class="basic-products__button cards__button" type="button">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="cards__link-wrapper">
-                <a class="cards__link" href="#">
-                  <picture>
-                    <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
-            <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-desktop-2@1x.png 1x, images/catalog/catalog-can-desktop-2@2x 2x">
-                    <source media="(min-width: 768px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-tablet-2@1x.png 1x, images/catalog/catalog-can-tablet-2@2x.png 2x">
-                    <img class="cards__link-image" src="images/catalog/catalog-can-mobile-2@1x.png" width="130"
-                      height="188" srcset="images/catalog/catalog-can-mobile-2@2x.png 2x"
-                      alt="Кофе в синей алюминевой банке" loading="lazy">
-                  </picture>
-                </a>
-                <div class="cards__text">
-                  <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Декаф Флэт Уайт</h3>
-                  </a>
-                  <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                </div>
-                <div class="basic-products__order">
-                  <span class="basic-products__price">225₽</span>
-                  <div class="basic-products__button--block">
-                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="basic-products__icon" aria-hidden="true" focusable="false" fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
-                        fill="white" />
-                    </svg>
-                    <button class="basic-products__button cards__button" type="button">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="cards__link-wrapper">
-                <a class="cards__link" href="#">
-                  <picture>
-                    <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
-            <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-desktop-3@1x.png 1x, images/catalog/catalog-can-desktop-3@2x 2x">
-                    <source media="(min-width: 768px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-tablet-3@1x.png 1x, images/catalog/catalog-can-tablet-3@2x.png 2x">
-                    <img class="cards__link-image" src="images/catalog/catalog-can-mobile-3@1x.png" width="130"
-                      height="188" srcset="images/catalog/catalog-can-mobile-3@2x.png 2x"
-                      alt="Кофе в черной алюминевой банке" loading="lazy">
-                  </picture>
-                </a>
-                <div class="cards__text">
-                  <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Декаф Флэт Уайт</h3>
-                  </a>
-                  <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                </div>
-                <div class="basic-products__order">
-                  <span class="basic-products__price">225₽</span>
-                  <div class="basic-products__button--block">
-                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="basic-products__icon" aria-hidden="true" focusable="false" fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
-                        fill="white" />
-                    </svg>
-                    <button class="basic-products__button cards__button" type="button">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="cards__link-wrapper">
-                <a class="cards__link" href="#">
-                  <picture>
-                    <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
-            <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-desktop-4@1x.png 1x, images/catalog/catalog-can-desktop-4@2x 2x">
-                    <source media="(min-width: 768px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-tablet-4@1x.png 1x, images/catalog/catalog-can-tablet-4@2x.png 2x">
-                    <img class="cards__link-image" src="images/catalog/catalog-can-mobile-4@1x.png" width="130"
-                      height="188" srcset="images/catalog/catalog-can-mobile-4@2x.png 2x"
-                      alt="Кофе в розовой алюминевой банке" loading="lazy">
-                  </picture>
-                </a>
-                <div class="cards__text">
-                  <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Декаф Флэт Уайт</h3>
-                  </a>
-                  <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                </div>
-                <div class="basic-products__order">
-                  <span class="basic-products__price">225₽</span>
-                  <div class="basic-products__button--block">
-                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="basic-products__icon" aria-hidden="true" focusable="false" fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
-                        fill="white" />
-                    </svg>
-                    <button class="basic-products__button cards__button" type="button">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="cards__link-wrapper">
-                <a class="cards__link" href="#">
-                  <picture>
-                    <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
-            <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-desktop-5@1x.png 1x, images/catalog/catalog-can-desktop-5@2x 2x">
-                    <source media="(min-width: 768px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-tablet-5@1x.png 1x, images/catalog/catalog-can-tablet-5@2x.png 2x">
-                    <img class="cards__link-image" src="images/catalog/catalog-can-mobile-5@1x.png" width="130"
-                      height="188" srcset="images/catalog/catalog-can-mobile-5@2x.png 2x"
-                      alt="Кофе в коричневой алюминевой банке" loading="lazy">
-                  </picture>
-                </a>
-                <div class="cards__text">
-                  <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Декаф Флэт Уайт</h3>
-                  </a>
-                  <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                </div>
-                <div class="basic-products__order">
-                  <span class="basic-products__price">225₽</span>
-                  <div class="basic-products__button--block">
-                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="basic-products__icon" aria-hidden="true" focusable="false" fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
-                        fill="white" />
-                    </svg>
-                    <button class="basic-products__button cards__button" type="button">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="cards__link-wrapper">
-                <a class="cards__link" href="#">
-                  <picture>
-                    <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
-            <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
-                    <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-desktop-6@1x.png 1x, images/catalog/catalog-can-desktop-6@2x 2x">
-                    <source media="(min-width: 768px)" width="130" height="188" type="image/png"
-                      srcset="images/catalog/catalog-can-tablet-6@1x.png 1x, images/catalog/catalog-can-tablet-6@2x.png 2x">
-                    <img class="cards__link-image" src="images/catalog/catalog-can-mobile-6@1x.png" width="130"
-                      height="188" srcset="images/catalog/catalog-can-mobile-6@2x.png 2x"
-                      alt="Кофе в желтой алюминевой банке" loading="lazy">
-                  </picture>
-                </a>
-                <div class="cards__text">
-                  <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Декаф Флэт Уайт</h3>
-                  </a>
-                  <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                </div>
-                <a class="basic-products__order" href="#">
-                  <span class="basic-products__price">225₽</span>
-                  <div class="basic-products__button--block">
-                    <svg class="basic-products__icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path  fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
-                        fill="white" />
-                    </svg>
-                    <span class="basic-products__text">В корзину</span>
-                  </div>
-                </a>
-              </div>
-            </li>
-          </ul>
+        <div class="basic-products__header">
+          <span class="basic-products__promo">Каталог</span>
+          <h1 class="basic-products__title">Каталог кофейных напитков</h1>
         </div>
+
+        <div class="basic-products__block">
+          <section class="basic-products__filter catalog-filter" data-test="filter">
+            <h2 class="visually-hidden">Список выбора кофе</h2>
+            <form class="basic-products__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter__group">
+                <legend class="catalog-filter__title">Цена</legend>
+
+                <div class="catalog-filter-range__wrapper">
+                  <label class="catalog-filter-range__label">
+                    <input class="catalog-filter-range__field catalog-filter-range__from" type="number" value="0"
+                      placeholder="0" name="min-price">
+                  </label>
+                  <span class="catalog-filter-range__hyphen">от</span>
+                  <label class="catalog-filter-range__label">
+                    <input class="catalog-filter-range__field catalog-filter-range__till" type="number" value="900"
+                      placeholder="900" name="max-price">
+                  </label>
+                  <div class="catalog-filter-range__scale">
+                    <div class="catalog-filter-range__bar" style="left: 0; width: 207px">
+                      <button class="catalog-filter-range__toggle catalog-filter-range__min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="catalog-filter-range__toggle catalog-filter-range__max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="basic-products-group__wrapper">
+                <legend class="basic-products-group__title">Наличие молока</legend>
+                <ul class="basic-products-group__list milk-filter">
+                  <li class="basic-products-group__item">
+                    <label class="milk-filter__control">
+                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option" checked>
+                      <span class="milk-filter__checkbox"></span>
+                      <span class="milk-filter__title">Неважно</span>
+                    </label>
+                  </li>
+                  <li class="basic-products-group__item">
+                    <label class="milk-filter__control">
+                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
+                      <span class="milk-filter__checkbox"></span>
+                      <span class="milk-filter__title">Только животное</span>
+                    </label>
+                  </li>
+                  <li class="basic-products-group__item">
+                    <label class="milk-filter__control">
+                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
+                      <span class="milk-filter__checkbox"></span>
+                      <span class="milk-filter__title">Только растительное</span>
+                    </label>
+                  </li>
+                  <li class="basic-products-group__item">
+                    <label class="milk-filter__control">
+                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
+                      <span class="milk-filter__checkbox"></span>
+                      <span class="milk-filter__title">Без молока</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="basic-products-group__wrapper">
+                <legend class="basic-products-group__title">Страна произрастания</legend>
+                <ul class="basic-products-group__list country-filter">
+                  <li class="basic-products-group__item">
+                    <label class="country-filter__control">
+                      <input class="country-filter__input visually-hidden" type="checkbox" name="brazil" value="brazil"
+                        checked>
+                      <span class="country-filter__checkbox"></span>
+                      <span class="country-filter__title">Бразилия</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item type-housing-item">
+                    <label class="country-filter__control">
+                      <input class="country-filter__input visually-hidden" type="checkbox" name="ethiopia"
+                        value="ethiopia">
+                      <span class="country-filter__checkbox"></span>
+                      <span class="country-filter__title">Эфиопия</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item type-housing-item">
+                    <label class="country-filter__control">
+                      <input class="country-filter__input visually-hidden" type="checkbox" name="colombia"
+                        value="colombia">
+                      <span class="country-filter__checkbox"></span>
+                      <span class="country-filter__title">Колумбия</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item type-housing-item">
+                    <label class="country-filter__control">
+                      <input class="country-filter__input visually-hidden" type="checkbox" name="costa rica"
+                        value="costa rica">
+                      <span class="country-filter__checkbox"></span>
+                      <span class="country-filter__title">Коста-Рика</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item type-housing-item">
+                    <label class="country-filter__control">
+                      <input class="country-filter__input visually-hidden" type="checkbox" name="peru" value="peru">
+                      <span class="country-filter__checkbox"></span>
+                      <span class="country-filter__title">Перу</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="catalog-filter-button-block">
+                <button class="button__submit" type="submit">Применить</button>
+                <button class="button__reset" type="reset">Сбросить</button>
+              </div>
+            </form>
+          </section>
+
+          <div class="basic-products__list--wrapper">
+            <div class="basic-products__find--block">
+              <h2 class="basic-products__find--title">Сортировка:</h2>
+              <select class="basic-products__find--select" aria-label="Сортировка">
+                <option value="default">по умолчанию</option>
+                <option value="cheap">cначала дешёвые</option>
+                <option value="expensive">cначала дорогие</option>
+                <option value="popular">cначала популярные</option>
+              </select>
+            </div>
+            <ul class="basic-products__list cards">
+              <li class="cards__item">
+                <div class="cards__link-wrapper">
+                  <a class="cards__link" href="#">
+                    <picture>
+                      <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
+                      <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-desktop-1@1x.png 1x, images/catalog/catalog-can-desktop-1@2x 2x">
+                      <source media="(min-width: 768px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-tablet-1@1x.png 1x, images/catalog/catalog-can-tablet-1@2x.png 2x">
+                      <img class="cards__link-image" src="images/catalog/catalog-can-mobile-1@1x.png" width="130" height="188" srcset="images/catalog/catalog-can-mobile-1@2x.png 2x"
+                        alt="Кофе в белой алюминевой банке" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cards__text">
+                    <a class="cards__link-text" href="#">
+                      <h3 class="cards__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  </div>
+                  <div class="basic-products__order">
+                    <span class="basic-products__price">225₽</span>
+                    <a class="basic-products__button--block">
+                      <svg class="basic-products__icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
+                          fill="white" />
+                      </svg>
+                      <span class="basic-products__text">В корзину</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item cards__item--current">
+                <div class="cards__link-wrapper">
+                  <a class="cards__link " href="#">
+                    <picture>
+                      <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
+                      <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-desktop-2@1x.png 1x, images/catalog/catalog-can-desktop-2@2x 2x">
+                      <source media="(min-width: 768px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-tablet-2@1x.png 1x, images/catalog/catalog-can-tablet-2@2x.png 2x">
+                      <img class="cards__link-image" src="images/catalog/catalog-can-mobile-2@1x.png" width="130"
+                        height="188" srcset="images/catalog/catalog-can-mobile-2@2x.png 2x"
+                        alt="Кофе в синей алюминевой банке" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cards__text">
+                    <a class="cards__link-text" href="#">
+                      <h3 class="cards__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  </div>
+                  <div class="basic-products__order">
+                    <span class="basic-products__price">225₽</span>
+                    <a class="basic-products__button--block">
+                      <svg class="basic-products__icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
+                          fill="white" />
+                      </svg>
+                      <span class="basic-products__text">В корзину</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="cards__link-wrapper">
+                  <a class="cards__link" href="#">
+                    <picture>
+                      <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
+                      <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-desktop-3@1x.png 1x, images/catalog/catalog-can-desktop-3@2x 2x">
+                      <source media="(min-width: 768px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-tablet-3@1x.png 1x, images/catalog/catalog-can-tablet-3@2x.png 2x">
+                      <img class="cards__link-image" src="images/catalog/catalog-can-mobile-3@1x.png" width="130"
+                        height="188" srcset="images/catalog/catalog-can-mobile-3@2x.png 2x"
+                        alt="Кофе в черной алюминевой банке" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cards__text">
+                    <a class="cards__link-text" href="#">
+                      <h3 class="cards__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  </div>
+                  <div class="basic-products__order">
+                    <span class="basic-products__price">225₽</span>
+                    <a class="basic-products__button--block">
+                      <svg class="basic-products__icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
+                          fill="white" />
+                      </svg>
+                      <span class="basic-products__text">В корзину</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="cards__link-wrapper">
+                  <a class="cards__link" href="#">
+                    <picture>
+                      <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
+                      <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-desktop-4@1x.png 1x, images/catalog/catalog-can-desktop-4@2x 2x">
+                      <source media="(min-width: 768px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-tablet-4@1x.png 1x, images/catalog/catalog-can-tablet-4@2x.png 2x">
+                      <img class="cards__link-image" src="images/catalog/catalog-can-mobile-4@1x.png" width="130"
+                        height="188" srcset="images/catalog/catalog-can-mobile-4@2x.png 2x"
+                        alt="Кофе в розовой алюминевой банке" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cards__text">
+                    <a class="cards__link-text" href="#">
+                      <h3 class="cards__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  </div>
+                  <div class="basic-products__order">
+                    <span class="basic-products__price">225₽</span>
+                    <a class="basic-products__button--block">
+                      <svg class="basic-products__icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
+                          fill="white" />
+                      </svg>
+                      <span class="basic-products__text">В корзину</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="cards__link-wrapper">
+                  <a class="cards__link" href="#">
+                    <picture>
+                      <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
+                      <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-desktop-5@1x.png 1x, images/catalog/catalog-can-desktop-5@2x 2x">
+                      <source media="(min-width: 768px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-tablet-5@1x.png 1x, images/catalog/catalog-can-tablet-5@2x.png 2x">
+                      <img class="cards__link-image" src="images/catalog/catalog-can-mobile-5@1x.png" width="130"
+                        height="188" srcset="images/catalog/catalog-can-mobile-5@2x.png 2x"
+                        alt="Кофе в коричневой алюминевой банке" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cards__text">
+                    <a class="cards__link-text" href="#">
+                      <h3 class="cards__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  </div>
+                  <div class="basic-products__order">
+                    <span class="basic-products__price">225₽</span>
+                    <a class="basic-products__button--block">
+                      <svg class="basic-products__icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
+                          fill="white" />
+                      </svg>
+                      <span class="basic-products__text">В корзину</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="cards__item">
+                <div class="cards__link-wrapper">
+                  <a class="cards__link" href="#">
+                    <picture>
+                      <!-- <source media="(min-width: 1440px)" type="image/webp" width="169" height="210" srcset="images/catalog/catalog-food-1-desktop@1x.webp, images/catalog/catalog-food-1-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" width="200" height="210" srcset="images/catalog/catalog-food-1-tablet@1x.webp, images/catalog/catalog-food-1-tablet@2x.webp 2x">
+              <source width="68" height="86" type="image/webp" srcset="images/catalog/catalog-food-1-mobile@1x.webp, images/catalog/catalog-food-1-mobile@2x.webp 2x"> -->
+                      <source media="(min-width: 1440px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-desktop-6@1x.png 1x, images/catalog/catalog-can-desktop-6@2x 2x">
+                      <source media="(min-width: 768px)" width="130" height="188" type="image/png"
+                        srcset="images/catalog/catalog-can-tablet-6@1x.png 1x, images/catalog/catalog-can-tablet-6@2x.png 2x">
+                      <img class="cards__link-image" src="images/catalog/catalog-can-mobile-6@1x.png" width="130"
+                        height="188" srcset="images/catalog/catalog-can-mobile-6@2x.png 2x"
+                        alt="Кофе в желтой алюминевой банке" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cards__text">
+                    <a class="cards__link-text" href="#">
+                      <h3 class="cards__title">Декаф Флэт Уайт</h3>
+                    </a>
+                    <p class="cards__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  </div>
+                  <div class="basic-products__order" href="#">
+                    <span class="basic-products__price">225₽</span>
+                    <a class="basic-products__button--block">
+                      <svg class="basic-products__icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z"
+                          fill="white" />
+                      </svg>
+                      <span class="basic-products__text">В корзину</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
