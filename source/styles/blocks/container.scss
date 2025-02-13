@@ -40,7 +40,7 @@
     width: calc($desktop-width - 80px);
 
     // &.page__wrapper,
-    // &.promo__wrapper,
+    &.main-footer__wrapper,
     &.features__wrapper,
     &.basic-products__wrapper {
       width: calc($desktop-width - 80px);
