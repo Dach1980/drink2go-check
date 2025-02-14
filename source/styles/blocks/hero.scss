@@ -38,7 +38,6 @@
 
 .hero__promo {
   @include bold-font (12px, 1.33); // $font-size, $line-height
-  font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--base-primary, #ff6347);
@@ -50,31 +49,23 @@
 
   @media (min-width: $tablet-width) {
     @include bold-font(12px, 1.33); // $font-size, $line-height
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: var(--base-primary, #ff6347);
     text-align: center;
-    margin: 0;
     // background-color: var(--white, #ff6347);
     // padding-top: 40px;
     // padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    @include bold-font (12px, 1.33); // $font-size, $line-height
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    @include bold-font (12px, 1.33); // $font-size, $line-height;
     color: var(--base-primary, #ff6347);
     text-align: left;
-    margin: 0;
-    // background-color: var(--white, #ff6347);
     padding-top: 150px;
   }
 }
 
 .hero__title {
-  @include primary-font (36px, 1); // $font-size, $line-height
+  @include bold-font (36px, 1); // $font-size, $line-height
   color: var(--white, #ff6347);
   text-align: center;
   margin: 0;
@@ -82,9 +73,8 @@
   // padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    @include primary-font (56px, 1.43); // $font-size, $line-height
+    @include bold-font (56px, 1.43); // $font-size, $line-height
     letter-spacing: 0.02em;
-    font-weight: 700;
     grid-row: 2 / 3;
     text-align: center;
     color: var(--black, #ff6347);
@@ -94,10 +84,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include primary-font (56px, 1.43); // $font-size, $line-height
+    @include bold-font (56px, 1.43); // $font-size, $line-height
     letter-spacing: 0.02em;
     grid-column: 2 / 3;
-    font-weight: 700;
     text-align: left;
     color: var(--black, #ff6347);
     // background-color: var(--white, #ff6347);

@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/montserrat/Montserrat-Black.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple_touch_icon.png">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon_32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon_16x16.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/Montserrat_Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat_SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat_Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Montserrat_Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -16,10 +23,8 @@
     <header class="main-header" data-test="header">
       <a class="main-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="170"
-            height="36">
-          <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="82"
-            height="36">
+          <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="170" height="36">
+          <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="82" height="36">
           <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="32" height="36"
             alt="Логотип Drink 2 Go" loading="lazy">
         </picture>
@@ -34,7 +39,7 @@
       <nav class="main-nav main-nav--index main-nav--opened">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+            <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Каталог</a>
@@ -83,8 +88,7 @@
       <div class="hero__wrapper container">
         <span class="hero__promo">Новинка!</span>
         <h1 class="hero__title">Декаф Флэт Уайт</h1>
-        <p class="hero__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
-          что нужно для расслабления после тяжёлого рабочего дня</p>
+        <p class="hero__description">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
         <div class="hero__image-wrapper">
           <picture>
             <!-- <source media="(min-width: 1440px)" type="image/webp" width="552" height="499" srcset="images/hero/hero-desktop@1x.webp, images/hero/hero-desktop@2x.webp 2x">
@@ -99,7 +103,7 @@
           </picture>
         </div>
         <div class="hero-price-wrapper">
-          <span class="hero-old-price">295₽</span>
+          <del class="hero-old-price">295₽</del>
           <span class="hero-new-price">225₽</span>
           <a class="hero__link button" href="#">Заказать</a>
         </div>
