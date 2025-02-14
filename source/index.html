@@ -104,8 +104,8 @@
                 srcset="images/slider/flat-white-desktop.png 1x, images/slider/flat-white-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
                 srcset="images/slider/flat-white-tablet.png 1x, images/slider/flat-white-tablet@2x.png 2x">
-              <img src="images/slider/flat-white-mobile.png" srcset="images/slider/flat-white-mobile@2x.png 2x" width="280"
-                height="280" alt="Изображение товара Декаф Флэт Уайт">
+              <img src="images/slider/flat-white-mobile.png" srcset="images/slider/flat-white-mobile@2x.png 2x"
+                width="280" height="280" alt="Изображение товара Декаф Флэт Уайт">
             </picture>
             <div class="hero__content">
               <span class="hero__promo">Новинка!</span>
@@ -194,7 +194,7 @@
           </li>
           <li class="features__item features__fit">
             <h3 class="features__name">Удобство</h3>
-            <p class="features__description">Легко помещается и&nbsp;в&nbsp;карман,             и&nbsp;в&nbsp;маленькую сумочку</p>
+            <p class="features__description">Легко помещается и&nbsp;в&nbsp;карман, и&nbsp;в&nbsp;маленькую сумочку</p>
           </li>
           <li class="features__item features__energy">
             <h3 class="features__name">Бодрость</h3>
@@ -219,115 +219,79 @@
         <div class="basic-products__block">
           <section class="basic-products__filter catalog-filter" data-test="filter">
             <h2 class="visually-hidden">Список выбора кофе</h2>
-            <form class="basic-products__form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter__group">
-                <legend class="catalog-filter__title">Цена</legend>
-
-                <div class="catalog-filter-range__wrapper">
-                  <label class="catalog-filter-range__label">
-                    <input class="catalog-filter-range__field catalog-filter-range__from" type="number" value="0"
-                      placeholder="0" name="min-price">
-                  </label>
-                  <span class="catalog-filter-range__hyphen">от</span>
-                  <label class="catalog-filter-range__label">
-                    <input class="catalog-filter-range__field catalog-filter-range__till" type="number" value="900"
-                      placeholder="900" name="max-price">
-                  </label>
-                  <div class="catalog-filter-range__scale">
-                    <div class="catalog-filter-range__bar" style="left: 0; width: 207px">
-                      <button class="catalog-filter-range__toggle catalog-filter-range__min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену</span>
-                      </button>
-                      <button class="catalog-filter-range__toggle catalog-filter-range__max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену</span>
-                      </button>
-                    </div>
-                  </div>
+            <form class="basic-products__form filters" id="catalog-form" action="https://echo.htmlacademy.ru/"
+              method="get">
+              <fieldset class="filters__group range">
+                <legend class="filters__title">Цена</legend>
+                <div class="range__target"></div>
+                <div class="range__price">
+                  <input type="number" class="range__price-input" name="price-from" placeholder="0" form="catalog-form"
+                    min="0" max="1000" aria-label="Цена от">
+                  <input type="number" class="range__price-input" name="price-to" placeholder="900" form="catalog-form"
+                    min="0" max="1000" aria-label="Цена до">
                 </div>
               </fieldset>
 
-              <fieldset class="basic-products-group__wrapper">
-                <legend class="basic-products-group__title">Наличие молока</legend>
-                <ul class="basic-products-group__list milk-filter">
-                  <li class="basic-products-group__item">
-                    <label class="milk-filter__control">
-                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option" checked>
-                      <span class="milk-filter__checkbox"></span>
-                      <span class="milk-filter__title">Неважно</span>
-                    </label>
+              <fieldset class="filters__group radio">
+                <legend class="filters__title">Наличие молока</legend>
+                <ul class="filters__list">
+                  <li class="radio__item">
+                    <input class="radio__input visually-hidden" id="any" type="radio" name="milk-type" value="any"
+                      checked>
+                    <label class="filters__label radio__label" for="any">Неважно</label>
                   </li>
-                  <li class="basic-products-group__item">
-                    <label class="milk-filter__control">
-                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
-                      <span class="milk-filter__checkbox"></span>
-                      <span class="milk-filter__title">Только животное</span>
-                    </label>
+                  <li class="radio__item">
+                    <input class="radio__input visually-hidden" id="classic" type="radio" name="milk-type"
+                      value="classic">
+                    <label class="filters__label radio__label" for="classic">Только животное</label>
                   </li>
-                  <li class="basic-products-group__item">
-                    <label class="milk-filter__control">
-                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
-                      <span class="milk-filter__checkbox"></span>
-                      <span class="milk-filter__title">Только растительное</span>
-                    </label>
+                  <li class="radio__item">
+                    <input class="radio__input visually-hidden" id="vegie" type="radio" name="milk-type" value="vegie">
+                    <label class="filters__label radio__label" for="vegie">Только растительное</label>
                   </li>
-                  <li class="basic-products-group__item">
-                    <label class="milk-filter__control">
-                      <input class="milk-filter__input visually-hidden" type="radio" name="milk-option">
-                      <span class="milk-filter__checkbox"></span>
-                      <span class="milk-filter__title">Без молока</span>
-                    </label>
+                  <li class="radio__item">
+                    <input class="radio__input visually-hidden" id="none" type="radio" name="milk-type" value="none"
+                      disabled>
+                    <label class="filters__label radio__label" for="none">Без молока</label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="basic-products-group__wrapper">
-                <legend class="basic-products-group__title">Страна произрастания</legend>
-                <ul class="basic-products-group__list country-filter">
-                  <li class="basic-products-group__item">
-                    <label class="country-filter__control">
-                      <input class="country-filter__input visually-hidden" type="checkbox" name="brazil" value="brazil"
-                        checked>
-                      <span class="country-filter__checkbox"></span>
-                      <span class="country-filter__title">Бразилия</span>
-                    </label>
+              <fieldset class="filters__group checkbox">
+                <legend class="filters__title">Страна произрастания</legend>
+                <ul class="filters__list">
+                  <li class="checkbox__item">
+                    <input class="checkbox__input visually-hidden" id="brasil" type="checkbox" name="origin"
+                      value="brasil" checked>
+                    <label class="filters__label checkbox__label" for="brasil">Бразилия</label>
                   </li>
-                  <li class="catalog-filter-item type-housing-item">
-                    <label class="country-filter__control">
-                      <input class="country-filter__input visually-hidden" type="checkbox" name="ethiopia"
-                        value="ethiopia">
-                      <span class="country-filter__checkbox"></span>
-                      <span class="country-filter__title">Эфиопия</span>
-                    </label>
+                  <li class="checkbox__item">
+                    <input class="checkbox__input visually-hidden" id="ethiopia" type="checkbox" name="origin"
+                      value="ethiopia">
+                    <label class="filters__label checkbox__label" for="ethiopia">Эфиопия</label>
                   </li>
-                  <li class="catalog-filter-item type-housing-item">
-                    <label class="country-filter__control">
-                      <input class="country-filter__input visually-hidden" type="checkbox" name="colombia"
-                        value="colombia">
-                      <span class="country-filter__checkbox"></span>
-                      <span class="country-filter__title">Колумбия</span>
-                    </label>
+                  <li class="checkbox__item">
+                    <input class="checkbox__input visually-hidden" id="colombia" type="checkbox" name="origin"
+                      value="colombia">
+                    <label class="filters__label checkbox__label" for="colombia">Колумбия</label>
                   </li>
-                  <li class="catalog-filter-item type-housing-item">
-                    <label class="country-filter__control">
-                      <input class="country-filter__input visually-hidden" type="checkbox" name="costa rica"
-                        value="costa rica">
-                      <span class="country-filter__checkbox"></span>
-                      <span class="country-filter__title">Коста-Рика</span>
-                    </label>
+                  <li class="checkbox__item">
+                    <input class="checkbox__input visually-hidden" id="costa-rika" type="checkbox" name="origin"
+                      value="costa rika">
+                    <label class="filters__label checkbox__label" for="costa-rika">Коста-Рика</label>
                   </li>
-                  <li class="catalog-filter-item type-housing-item">
-                    <label class="country-filter__control">
-                      <input class="country-filter__input visually-hidden" type="checkbox" name="peru" value="peru">
-                      <span class="country-filter__checkbox"></span>
-                      <span class="country-filter__title">Перу</span>
-                    </label>
+                  <li class="checkbox__item">
+                    <input class="checkbox__input visually-hidden" id="peru" type="checkbox" name="origin" value="peru"
+                      disabled>
+                    <label class="filters__label checkbox__label" for="peru">Перу</label>
                   </li>
                 </ul>
               </fieldset>
 
-              <div class="catalog-filter-button-block">
-                <button class="button__submit" type="submit">Применить</button>
-                <button class="button__reset" type="reset">Сбросить</button>
+              <div class="filters__buttons">
+                <button class="button filters__button filters__button--submit" type="submit">Применить</button>
+                <button class="button button--secondary filters__button filters__button--reset"
+                  type="reset">Сбросить</button>
               </div>
             </form>
           </section>
@@ -644,8 +608,13 @@
           <a href="tel:+79999999999" class=".main-footer-contacts__phone">+7 (999) 999-99-99</a>
         </div>
       </div>
+      <p class="footer__development">
+        Разработано
+        в <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__development-link">HTML Academy</a>
+      </p>
     </div>
   </footer>
+  <script src="./vendor/noUiSlider/nouislider.min.js"></script>
   <script src="./vendor/swiper/swiper-bundle.min.js" defer></script>
 </body>
 
