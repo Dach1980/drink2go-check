@@ -14,6 +14,7 @@
   <link rel="preload" href="./fonts/Montserrat_SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat_Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/Montserrat_Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -23,8 +24,10 @@
     <header class="main-header" data-test="header">
       <a class="main-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="170" height="36">
-          <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="82" height="36">
+          <source media="(min-width: 1440px)" srcset="images/nav/logo-desktop.svg" type="image/svg+xml" width="170"
+            height="36">
+          <source media="(min-width: 768px)" srcset="images/nav/logo-tablet.svg" type="image/svg+xml" width="82"
+            height="36">
           <img class="main-header__logo-image" src="images/nav/logo-mobile.svg" width="32" height="36"
             alt="Логотип Drink 2 Go" loading="lazy">
         </picture>
@@ -84,29 +87,99 @@
   </div>
 
   <main class="main-container" data-test="main">
+    <h1 class="visually-hidden">Интернет магазин по продаже кофейных напитков</h1>
     <section class="hero" data-test="hero">
-      <div class="hero__wrapper container">
-        <span class="hero__promo">Новинка!</span>
-        <h1 class="hero__title">Декаф Флэт Уайт</h1>
-        <p class="hero__description">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
-        <div class="hero__image-wrapper">
-          <picture>
-            <!-- <source media="(min-width: 1440px)" type="image/webp" width="552" height="499" srcset="images/hero/hero-desktop@1x.webp, images/hero/hero-desktop@2x.webp 2x">
-            <source media="(min-width: 768px)" type="image/webp" width="709" height="609" srcset="images/promo-food-can-tablet@1x.webp, images/promo-food-can-tablet@2x.webp 2x">
-            <source type="image/webp" width="280" height="270" srcset="images/promo-food-can-mobile@1x.webp, images/promo-food-can-mobile@2x.webp 2x"> -->
-            <source media="(min-width: 1440px)" width="600" height="600" type="image/png"
-              srcset="images/hero/hero-desktop@1x.png 1x, images/hero/hero-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="476" height="476" type="image/png"
-              srcset="images/hero/hero-tablet@1x.png 1x, images/hero/hero-tablet@2x.png 2x">
-            <img class="hero__image" src="images/hero/hero-mobile@1x.png" width="280" height="280"
-              srcset="images/hero/hero-mobile@2x.png 2x" alt="Большая банка кофе в алюминевой банке" loading="lazy">
-          </picture>
+      <h2 class="visually-hidden">Новинки кофе</h2>
+      <div class="hero-swiper swiper">
+        <div class="hero-swiper__wrapper swiper-wrapper">
+          <div class="hero__card hero__card--flat-white swiper-slide">
+            <picture class="hero__picture">
+              <!-- <source media="(min-width: 1440px)" type="image/webp"
+                srcset="images/slider/flat-white-desktop.webp 1x, images/slider/flat-white-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="images/slider/flat-white-tablet.webp 1x, images/slider/flat-white-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="images/slider/flat-white-mobile.webp 1x, images/slider/flat-white-mobile@2x.webp 2x"> -->
+              <source media="(min-width: 1440px)"
+                srcset="images/slider/flat-white-desktop.png 1x, images/slider/flat-white-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="images/slider/flat-white-tablet.png 1x, images/slider/flat-white-tablet@2x.png 2x">
+              <img src="images/slider/flat-white-mobile.png" srcset="images/slider/flat-white-mobile@2x.png 2x" width="280"
+                height="280" alt="Изображение товара Декаф Флэт Уайт">
+            </picture>
+            <div class="hero__content">
+              <span class="hero__promo">Новинка!</span>
+              <h3 class="hero__title">Декаф Флэт Уайт</h3>
+              <p class="hero__description">Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным
+                фермерским молоком&nbsp;&mdash; то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
+              <div class="hero__price">
+                <del class="hero__old-price">295&#8381;</del>
+                <span class="hero__new-price">225&#8381;</span>
+                <a href="#!" class="button hero__button">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__card hero__card--lavender-latte swiper-slide">
+            <picture class="hero__picture">
+              <!-- <source media="(min-width: 1440px)" type="image/webp"
+                srcset="images/slider/lavender-desktop.webp 1x, images/slider/lavender-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="images/slider/lavender-tablet.webp 1x, images/slider/lavender-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="images/slider/lavender-mobile.webp 1x, images/slider/lavender-mobile@2x.webp 2x"> -->
+              <source media="(min-width: 1440px)"
+                srcset="images/slider/lavender-desktop.png 1x, images/slider/lavender-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="images/slider/lavender-tablet.png 1x, images/slider/lavender-tablet@2x.png 2x">
+              <img src="images/slider/lavender-mobile.png" srcset="images/slider/lavender-mobile@2x.png 2x" width="280"
+                height="280" alt="Изображение товара Лавандовый Латте">
+            </picture>
+            <div class="hero__content">
+              <span class="hero__promo">Новинка!</span>
+              <h3 class="hero__title">Лавандовый Латте</h3>
+              <p class="hero__description">Невероятное сочетание перуанской высокогорной арабики с&nbsp;молоком ламы
+                и&nbsp;лавандовым сиропом унесёт вас прямо на&nbsp;вершину Радужных гор</p>
+              <div class="hero__price">
+                <del class="hero__old-price">285&#8381;</del>
+                <span class="hero__new-price">265&#8381;</span>
+                <a href="#!" class="button hero__button">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__card hero__card--espresso swiper-slide">
+            <picture class="hero__picture">
+              <!-- <source media="(min-width: 1440px)" type="image/webp"
+                srcset=" 1x, images/slider/espresso_desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="images/slider/espresso-tablet.webp 1x, images/slider/espresso-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="images/slider/espresso-mobile.webp 1x, images/slider/espresso-mobile@2x.webp 2x"> -->
+              <source media="(min-width: 1440px)"
+                srcset="images/slider/espresso-desktop.png 1x, images/slider/espresso-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="images/slider/espresso-tablet.png 1x, images/slider/espresso-tablet@2x.png 2x">
+              <img src="images/slider/espresso-mobile.png" srcset="images/slider/espresso-mobile@2x.png 2x" width="280"
+                height="280" alt="Изображение товара Тройной эспрессо">
+            </picture>
+            <div class="hero__content">
+              <span class="hero__promo">Новинка!</span>
+              <h3 class="hero__title">Тройной Эспрессо</h3>
+              <p class="hero__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо
+                из&nbsp;Колумбии покажет вам, что такое настоящая бодрость</p>
+              <div class="hero__price">
+                <del class="hero__old-price">395&#8381;</del>
+                <span class="hero__new-price">375&#8381;</span>
+                <a href="#!" class="button hero__button">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-swiper__pagination"></div>
+          <div class="hero-swiper__button hero-swiper__button--prev" aria-label="К предыдущему слайду" role="button">
+          </div>
+          <div class="hero-swiper__button hero-swiper__button--next" aria-label="К следующему слайду" role="button">
+          </div>
         </div>
-        <div class="hero-price-wrapper">
-          <del class="hero-old-price">295₽</del>
-          <span class="hero-new-price">225₽</span>
-          <a class="hero__link button" href="#">Заказать</a>
-        </div>
+
       </div>
     </section>
 
@@ -575,6 +648,7 @@
       </div>
     </div>
   </footer>
+  <script src="./vendor/swiper/swiper-bundle.min.js" defer></script>
 </body>
 
 </html>
