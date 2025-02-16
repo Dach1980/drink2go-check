@@ -39,19 +39,19 @@
 //   grid-column: 3 /-1;
 // }
 
-// .site-navigation--no-js .site-navigation__toggle {
-//   @media (max-width: $mobile-width) {
-//     display: none;
-//   }
-// }
+.site-navigation--no-js .site-navigation__toggle {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
 
-// .site-navigation--no-js .site-navigation__list {
-//   @media (max-width: $mobile-width) {
-//     position: static;
-//     display: block;
-//     margin-left: -20px;
-//   }
-// }
+.site-navigation--no-js .site-navigation__list {
+  @media (max-width: $mobile-width) {
+    position: static;
+    display: block;
+    margin-left: -20px;
+  }
+}
 
 .site-navigation--open .site-navigation__toggle {
   @media (max-width: $mobile-width) {
