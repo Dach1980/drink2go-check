@@ -1,20 +1,3 @@
-// .cards {
-//   margin: 0;
-//   padding: 0;
-
-//   @media (min-width: $tablet-width) {
-//     display: grid;
-//     grid-template-columns: repeat(2, 324px);
-//     gap: 62px 60px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     width: 1011px;
-//     grid-template-columns: repeat(3, 317px);
-//     gap: 30px;
-//   }
-// }
-
 .cards {
   display: grid;
   gap: 20px;
@@ -67,24 +50,17 @@
   }
 }
 
-// .cards__text {
-//   @media (min-width: $tablet-width) {
-//     margin-bottom: auto;
-//   }
-// }
-
 .cards__link-text {
   text-decoration: none;
 }
 
 .cards__title {
-  // @include bold-font(12px, 1.33); // $font-size, $line-height
-  // margin: 0;
-  // padding: 0;
-  // color: var(--gray-dark, #ff6347);
-  // text-transform: uppercase;
-  // padding-right: 60px;
-  // padding-bottom: 21px;
+  @include bold-font(24px, 1.5); // $font-size, $line-height
+    text-align: left;
+    color: var(--black, #ff6347);
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 
   // @media (min-width: $tablet-width) {
   // @include secondary-font (20px, 24px); // $font-size, $line-height
@@ -122,5 +98,79 @@
     @include primary-font (14px, 1.43); // $font-size, $line-height
     text-align: left;
     margin-bottom: 20px;
+  }
+}
+
+.cards__order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+  transition: 0.2s ease-in;
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (14px, 1.43); // $font-size, $line-height
+    text-align: left;
+    display: grid;
+    grid-template-columns: 96px 141px;
+  }
+}
+
+.cards__price {
+  @include semi-bold-font (20px, 1.6); // $font-size, $line-height
+  font-weight: 600;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (20px, 1.6); // $font-size, $line-height
+    text-align: left;
+  }
+}
+
+.cards__icon {
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 16px;
+    margin-right: 6px;
+    background-color: currentColor;
+    mask-image: url("../../icons/stack.svg#icon-add-to-basket");
+  }
+}
+
+.cards__button {
+  @include primary-font (14px, 1.43); // $font-size, $line-height
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--base-primary, #ff6347);
+  color: var(--white, #ff6347);
+  padding: 8px 20px;
+
+  @media (min-width: $desktop-width) {
+    @include primary-font (14px, 1.43); // $font-size, $line-height
+    font-weight: 400;
+    text-align: left;
+    color: var(--white, #ff6347);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-lighter, #ff6347);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: var(--primary-lighter, #ff6347);
   }
 }

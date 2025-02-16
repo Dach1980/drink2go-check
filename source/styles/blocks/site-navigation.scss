@@ -85,22 +85,18 @@
 }
 
 .site-navigation--no-js {
-  .site-navigation__toggle {
-    display: none;
-  }
-}
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
 
-.site-navigation--no-js {
   .site-navigation__list {
     position: static;
     display: block;
     margin-left: -20px;
   }
-}
 
-.site-navigation--no-js {
-  grid-row: 2 / 3;
-  grid-column: 1 / -1;
+  .site-navigation__toggle {
+    display: none;
+  }
 }
 
 .site-navigation--open {
