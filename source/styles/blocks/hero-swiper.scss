@@ -25,7 +25,7 @@
   bottom: 60px;
   z-index: 1;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $desktop-width) {
     display: none;
   }
 }

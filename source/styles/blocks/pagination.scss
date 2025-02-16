@@ -1,0 +1,39 @@
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.pagination__link {
+  min-width: 40px;
+  height: 40px;
+  padding: 8px 20px;
+
+  &--active,
+  &--active:hover,
+  &--active:focus,
+  &--active:active {
+    cursor: default;
+    color: initial;
+    background-color: transparent;
+  }
+
+  &--next::before {
+    transform: rotate(-90deg);
+  }
+}
+
+.pagination__text {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
