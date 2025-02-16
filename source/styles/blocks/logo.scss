@@ -1,4 +1,12 @@
+.logo {
+  text-decoration: none;
+  list-style: none;
+  grid-column: 1 / 2;
+
+}
+
 .logo__img {
+
   display: block;
   max-width: none;
   width: 32px;
@@ -22,9 +30,9 @@
     margin-left: 20px;
     font-size: 12px;
     line-height: 16px;
-    text-decoration: none;
     list-style: none;
     color: var(--black, #ff6347);
+    text-decoration: none;
   }
 
   &--footer {
