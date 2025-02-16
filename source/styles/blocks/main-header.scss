@@ -1,27 +1,12 @@
 .main-header {
-  // position: relative;
   display: flex;
   flex-flow: row wrap;
   padding: 0;
-  min-height: 60px;
   align-items: center;
-  // justify-content: space-between;
-
-  // @media (min-width: $tablet-width) {
   min-height: 80px;
-  //   flex-flow: row wrap;
-  //   padding: 27px 3px 24px 0;
-  //   justify-content: space-between;
-  //   display: grid;
-  //   grid-template-columns: 174px 1fr;
-  //   gap: 16px;
-  //   align-items: center;
-  // }
 
   @media (min-width: $desktop-width) {
     gap: 162px;
-    // justify-content: space-between;
-    // grid-template-columns: min-content 595px;
   }
 }
 

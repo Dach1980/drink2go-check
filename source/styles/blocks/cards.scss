@@ -121,9 +121,6 @@
   @media (min-width: $desktop-width) {
     @include primary-font (14px, 1.43); // $font-size, $line-height
     text-align: left;
-    // display: flex;
-    // flex-direction: column;
-    // gap: 0;
     margin-bottom: 20px;
   }
 }

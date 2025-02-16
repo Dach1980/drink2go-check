@@ -25,8 +25,8 @@
 }
 
 .basic-products__promo {
-  display: block;
   @include bold-font (12px, 1.33); // $font-size, $line-height
+  display: block;
   margin: 0 0 4px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -50,7 +50,6 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--base-primary, #ff6347);
-    text-align: center;
     padding-top: 100px;
     grid-column: 1/-1;
   }
@@ -249,7 +248,6 @@
 //   padding: 8px 20px 8px 46px;
 //   width: 141px;
 // }
-
 // &:hover {
 //   background-color: #5eaa2f;
 // }

@@ -92,22 +92,20 @@
 
   &:hover,
   &:focus {
-    background-image: linear-gradient(
-      90deg,
-      var(--white, #ff6347) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background-image:
+      linear-gradient(90deg,
+        var(--white, #ff6347) 0%,
+        rgba(255, 255, 255, 0) 100%);
 
     &:focus {
       outline: none;
     }
 
     &:active {
-      background-image: linear-gradient(
-        90deg,
-        rgba(120, 89, 207, 0.25) 0%,
-        rgba(120, 89, 207, 0) 100%
-      );
+      background-image:
+        linear-gradient(90deg,
+          rgba(120, 89, 207, 0.25) 0%,
+          rgba(120, 89, 207, 0) 100%);
     }
   }
 
