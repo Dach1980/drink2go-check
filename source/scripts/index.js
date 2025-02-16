@@ -40,7 +40,6 @@ const swiper = new Swiper('.hero-swiper', {
 });
 
 /* Hide menu with enabled JS */
-
 window.addEventListener('load', () =>
   siteNavigation.classList.remove('site-navigation--no-js')
 );
@@ -51,7 +50,6 @@ menuToggle.addEventListener('click', () =>
 );
 
 /* Toggle active link in header */
-
 siteNavigationLinks.forEach((link) => {
   link.addEventListener('click', () => {
     siteNavigationLinks.forEach((link) => {
@@ -63,12 +61,12 @@ siteNavigationLinks.forEach((link) => {
 
 /* noUiSlider */
 noUiSlider.create(rangeSlider, {
-  start: [0, 225],
+  start: [0, 900],
   connect: true,
   cssPrefix: 'range__',
   range: {
     min: 0,
-    max: 375,
+    max: 1000,
   },
   step: 10,
   handleAttributes: [{ 'aria-label': 'Меньше' }, { 'aria-label': 'Больше' }],
@@ -100,11 +98,9 @@ rangeInputs.forEach((input) => {
 });
 
 /* Reset range */
-
 form.addEventListener('reset', () => rangeSlider.noUiSlider.set([0, 225]));
 
 /* Toggle sort */
-
 sortToggle.addEventListener('click', () =>
   sortToggle.classList.toggle('sort__select--opened')
 );
@@ -116,7 +112,6 @@ sortOptions.addEventListener('click', (evt) => {
 });
 
 /* Pagination */
-
 paginationLinks.forEach((link) => {
   link.addEventListener('click', (evt) => {
     const target = evt.target;

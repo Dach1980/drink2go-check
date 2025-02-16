@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--nojs">
   <header class="header" data-test="header">
     <div class="container header__layout">
       <a class="logo header__logo" href="index.html">
@@ -34,8 +34,9 @@
           кофейных напитков</span>
       </a>
 
-      <nav class="site-navigation site-navigation--header site-navigation--no-js">
-        <button class="site-navigation__toggle" type="button" aria-label="Раскрыть/Свернуть меню"></button>
+      <nav class="site-navigation--no-js site-navigation site-navigation--header ">
+        <button class="site-navigation__toggle js-toggle-button" type="button"
+          aria-label="Раскрыть/Свернуть меню"></button>
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
             <a class="header__link site-navigation__link site-navigation__link--active">Главная</a>
