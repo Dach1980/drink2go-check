@@ -22,6 +22,10 @@
 
 .basic-products__header {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .basic-products__promo {
@@ -50,13 +54,17 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--base-primary, #ff6347);
-    padding-top: 100px;
-    grid-column: 1/-1;
+    padding: 0;
+    // padding-top: 100px;
   }
 }
 
 .basic-products__list--wrapper {
   background-color: var(--bg-lightest-grey, #ff6347);
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 /-1;
+  }
 }
 
 .basic-products__title {
