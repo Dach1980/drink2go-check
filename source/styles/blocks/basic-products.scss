@@ -45,6 +45,7 @@
     color: var(--base-primary, #ff6347);
     text-align: center;
     margin: 0;
+    padding-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,6 +63,10 @@
 .basic-products__list--wrapper {
   background-color: var(--bg-lightest-grey, #ff6347);
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2 /-1;
@@ -90,6 +95,10 @@
 
 .basic-products__form {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
@@ -137,6 +146,10 @@
   // padding-top: 40px;
   // padding-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    width: 159px;
+  }
+
   @media (min-width: $desktop-width) {
     @include semi-bold-font (16px, 1.5); // $font-size, $line-height
     border: none;
@@ -149,4 +162,8 @@
 
 .basic-products__block {
   padding: 0 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

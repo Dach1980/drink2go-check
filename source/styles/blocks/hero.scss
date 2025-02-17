@@ -130,8 +130,8 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
+    justify-content: center;
   }
-
 
   @media (min-width: $desktop-width) {
     column-gap: 0;
@@ -149,6 +149,10 @@
   // margin-right: 6px;
   margin-left: 26px;
   margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .hero__new-price {
@@ -158,4 +162,9 @@
   color: var(--black, #ff6347);
   margin-left: 9px;
   margin-right: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
+    margin-right: 23px;
+  }
 }

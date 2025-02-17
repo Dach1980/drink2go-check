@@ -23,11 +23,11 @@
       // &.features__wrapper,
       // &.programs__wrapper,
       // &.example__wrapper,
-      // &.contacts__wrapper,
-      // &.basic-products__wrapper,
-      // &.subscribe {
-      //   width: calc($tablet-width - 60px);
-      // }
+      &.footer__wrapper,
+      &.basic-products__wrapper,
+      &.header__wrapper {
+        width: calc($tablet-width - 40px);
+      }
 
       // &.subscribe {
       //   width: 632px;

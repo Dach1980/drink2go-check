@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 26px 30px;
     margin-bottom: 70px;
   }
 
@@ -24,6 +24,10 @@
   list-style: none;
   border-radius: 4px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 30px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 50px 30px 32px 28px;
@@ -62,13 +66,11 @@
   margin-bottom: 0;
   padding-bottom: 4px;
 
-  // @media (min-width: $tablet-width) {
-  // @include secondary-font (20px, 24px); // $font-size, $line-height
-  // text-align: center;
-  // width: 135px;
-  // margin: 0 auto;
-  // padding: 12px 0 19px;
-  // }
+  @media (min-width: $tablet-width) {
+    @include bold-font(24px, 1.5); // $font-size, $line-height
+    margin: 0;
+    padding-top: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     @include bold-font(24px, 1.5); // $font-size, $line-height
@@ -86,11 +88,9 @@
   margin: 0;
   margin-bottom: 16px;
 
-  // @media (min-width: $tablet-width) {
-  //   @include primary-font (36px, 1); // $font-size, $line-height
-  //   display: block;
-  //   margin-bottom: 22px;
-  // }
+  @media (min-width: $tablet-width) {
+    margin: 5px 0 20px;
+  }
 
   @media (min-width: $desktop-width) {
     @include primary-font (14px, 1.43); // $font-size, $line-height

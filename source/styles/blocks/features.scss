@@ -45,7 +45,7 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding: 0 10px;
+    padding: 0;
     grid-template-columns: repeat(2, min-content);
     gap: 50px 30px;
   }
@@ -73,6 +73,7 @@
     height: 56px;
     margin: 0;
     background-image: var(--icon);
+    background-size: var(--size);
     background-repeat: no-repeat;
     left: 50%;
     transform: translate(-50%);
@@ -91,9 +92,9 @@
     &::after {
       grid-column: 1 / 2;
       grid-row: 1 / -1;
-      top: 40%;
+      top: var(--top);
       position: absolute;
-      left: 0;
+      left: var(--left);
       transform: translateY(-60%);
     }
   }
@@ -120,22 +121,30 @@
 
 .features__speed {
   --icon: url("../../icons/icon-speed.svg");
-  // --size: 50px 56px;
+  --size: 50px 56px;
+  --top: 40%;
+  --left: 1px;
 }
 
 .features__fit {
   --icon: url("../../icons/icon-fit.svg");
-  // --size: 52px 56px;
+  --size: 52px 56px;
+  --top: 34%;
+  --left: 0;
 }
 
 .features__energy {
   --icon: url("../../icons/icon-energy.svg");
-  // --size: 42px 56px;
+  --size: 42px 56px;
+  --top: 28%;
+  --left: 5px;
 }
 
 .features__eco {
   --icon: url("../../icons/icon-eco.svg");
-  // --size: 46px 56px;
+  --size: 46px 56px;
+  --top: 32%;
+  --left: 3px;
 }
 
 .features__name {
@@ -146,7 +155,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include bold-font (24px, 36px); // $font-size, $line-height
+    @include bold-font (24px, 1.5); // $font-size, $line-height
     text-align: left;
     color: var(--black, #ff6347);
     grid-column: 2 / 3;
@@ -174,10 +183,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include primary-font (16px, 24px); // $font-size, $line-height
+    @include primary-font (16px, 1.5); // $font-size, $line-height
     text-align: left;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

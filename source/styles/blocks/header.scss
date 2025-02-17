@@ -1,4 +1,4 @@
-.header__layout {
+.header__wrapper {
   position: relative;
   display: grid;
   grid-template-columns: min-content 1fr min-content;
@@ -23,17 +23,16 @@
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 22px;
+    padding: 0;
+    padding-top: 22px;
   }
 }
 
 .header__link {
+  @include medium-bold-font-family (12px, 1.33); // $font-size, $line-height;
   display: block;
   padding: 22px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-  letter-spacing: 0.24px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-align: center;
   color: var(--black, #ff6347);
