@@ -1,6 +1,6 @@
 .cards {
   display: grid;
-  gap: 20px;
+  gap: 17px;
   margin: 0 0 40px;
   padding: 0;
   list-style: none;
@@ -19,7 +19,7 @@
 }
 
 .cards__item {
-  padding: 40px 20px 20px;
+  padding: 43px 20px 20px;
   background-color: var(--white, #ff6347);
   list-style: none;
   border-radius: 4px;
@@ -55,12 +55,12 @@
 }
 
 .cards__title {
-  @include bold-font(24px, 1.5); // $font-size, $line-height
-    text-align: left;
-    color: var(--black, #ff6347);
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 10px;
+  @include bold-font(18px, 1.78); // $font-size, $line-height
+  text-align: left;
+  color: var(--black, #ff6347);
+  padding-top: 2px;
+  margin-bottom: 0;
+  padding-bottom: 4px;
 
   // @media (min-width: $tablet-width) {
   // @include secondary-font (20px, 24px); // $font-size, $line-height
@@ -81,12 +81,10 @@
 }
 
 .cards__description {
-  // @include primary-font (36px, 1); // $font-size, $line-height
-  // color: var(--black, #ff6347);
-  // margin: 0;
-  // display: flex;
-  // flex-direction: column;
-  // row-gap: 0;
+  @include primary-font (14px, 1.43); // $font-size, $line-height
+  text-align: left;
+  margin: 0;
+  margin-bottom: 16px;
 
   // @media (min-width: $tablet-width) {
   //   @include primary-font (36px, 1); // $font-size, $line-height

@@ -103,6 +103,10 @@
 }
 
 .hero__description {
+  @include primary-font (14px, 1.43); // $font-size, $line-height;
+  display: block;
+  font-weight: 400;
+  color: var(--black, #ff6347);
   margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -116,12 +120,21 @@
 }
 
 .hero__price {
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  // column-gap: 4px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+  }
+
 
   @media (min-width: $desktop-width) {
+    column-gap: 0;
     margin-bottom: 8px;
     justify-content: start;
   }
@@ -133,14 +146,16 @@
   font-weight: 400;
   text-decoration: line-through;
   color: var(--base-primary, #ff6347);
-  margin-right: 6px;
+  // margin-right: 6px;
+  margin-left: 26px;
   margin-top: 2px;
 }
 
 .hero__new-price {
-  @include primary-font (20px, 1.6); // $font-size, $line-height;
+  @include semi-bold-font (20px, 1.6); // $font-size, $line-height;
   display: block;
   font-weight: 600;
   color: var(--black, #ff6347);
-  margin-right: 20px;
+  margin-left: 9px;
+  margin-right: 24px;
 }

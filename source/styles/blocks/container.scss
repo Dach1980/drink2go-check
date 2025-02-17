@@ -1,60 +1,58 @@
 .container {
   margin: 0 auto;
   width: $mobile-width;
-
-
   // &.features__wrapper,
   // &.programs__wrapper,
   // &.example__wrapper,
   // &.contacts__wrapper,
-  // &.subscribe {
-  //   width: calc($mobile-width - 40px);
-  // }
-
-  // &.page__wrapper,
-  // &.promo__wrapper,
-  // &.basic-products__wrapper {
-  //   width: 100%;
-  // }
-
-  @media (min-width: $tablet-width) {
-    width: calc($tablet-width - 60px);
+  &.footer__wrapper {
+      width: calc($mobile-width - 40px);
+    }
 
     // &.page__wrapper,
     // &.promo__wrapper,
-    // &.features__wrapper,
-    // &.programs__wrapper,
-    // &.example__wrapper,
-    // &.contacts__wrapper,
-    // &.basic-products__wrapper,
-    // &.subscribe {
-    //   width: calc($tablet-width - 60px);
+    // &.basic-products__wrapper {
+    //   width: 100%;
     // }
 
-    // &.subscribe {
-    //   width: 632px;
-    // }
-  }
+    @media (min-width: $tablet-width) {
+      width: calc($tablet-width - 60px);
 
-  @media (min-width: $desktop-width) {
-    width: calc($desktop-width - 80px);
+      // &.page__wrapper,
+      // &.promo__wrapper,
+      // &.features__wrapper,
+      // &.programs__wrapper,
+      // &.example__wrapper,
+      // &.contacts__wrapper,
+      // &.basic-products__wrapper,
+      // &.subscribe {
+      //   width: calc($tablet-width - 60px);
+      // }
 
-    // &.page__wrapper,
-    &.main-footer__wrapper,
-    &.features__wrapper,
-    &.basic-products__wrapper {
+      // &.subscribe {
+      //   width: 632px;
+      // }
+    }
+
+    @media (min-width: $desktop-width) {
       width: calc($desktop-width - 80px);
-    }
 
-    // &.programs__wrapper,
-    // &.example__wrapper,
-    // &.subscribe,
-    &.hero__wrapper {
-      width: calc($desktop-width - 210px);
-    }
+      // &.page__wrapper,
+      &.footer__wrapper,
+      &.features__wrapper,
+      &.basic-products__wrapper {
+        width: calc($desktop-width - 80px);
+      }
 
-    // &.contacts__wrapper {
-    //   width: 566px;
-    // }
+      // &.programs__wrapper,
+      // &.example__wrapper,
+      // &.subscribe,
+      &.hero__wrapper {
+        width: calc($desktop-width - 210px);
+      }
+
+      // &.contacts__wrapper {
+      //   width: 566px;
+      // }
+    }
   }
-}

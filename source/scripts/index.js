@@ -61,7 +61,7 @@ siteNavigationLinks.forEach((link) => {
 
 /* noUiSlider */
 noUiSlider.create(rangeSlider, {
-  start: [0, 900],
+  start: [0, 920],
   connect: true,
   cssPrefix: 'range__',
   range: {
@@ -98,7 +98,7 @@ rangeInputs.forEach((input) => {
 });
 
 /* Reset range */
-form.addEventListener('reset', () => rangeSlider.noUiSlider.set([0, 225]));
+form.addEventListener('reset', () => rangeSlider.noUiSlider.set([0, 1000]));
 
 /* Toggle sort */
 sortToggle.addEventListener('click', () =>
