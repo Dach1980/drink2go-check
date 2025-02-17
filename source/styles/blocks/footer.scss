@@ -29,6 +29,7 @@
     grid-column: 1/2;
     flex-direction: column;
     justify-content: start;
+    border-bottom: none;
   }
 }
 
@@ -67,6 +68,7 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-top: 48px;
+    border-bottom: none;
   }
 }
 
@@ -203,4 +205,8 @@
 
 .footer__list--contacts {
   gap: 15px;
+
+  @media (min-width: $desktop-width) {
+    gap: 17px;
+  }
 }

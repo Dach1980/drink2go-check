@@ -37,7 +37,7 @@
     @media (min-width: $desktop-width) {
       width: calc($desktop-width - 80px);
 
-      // &.page__wrapper,
+      &.header__wrapper,
       &.footer__wrapper,
       &.features__wrapper,
       &.basic-products__wrapper {
