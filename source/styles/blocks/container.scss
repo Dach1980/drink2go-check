@@ -2,26 +2,14 @@
   margin: 0 auto;
   width: $mobile-width;
 
-  // &.programs__wrapper,
-  // &.example__wrapper,
   &.features__wrapper,
   &.footer__wrapper {
       width: calc($mobile-width - 40px);
     }
 
-    // &.page__wrapper,
-    // &.promo__wrapper,
-    // &.basic-products__wrapper {
-    //   width: 100%;
-    // }
-
     @media (min-width: $tablet-width) {
       width: calc($tablet-width - 60px);
 
-      // &.page__wrapper,
-      // &.promo__wrapper,
-      // &.features__wrapper,
-      // &.programs__wrapper,
       &.features__wrapper {
         width: calc($tablet-width - 60px);
       }
@@ -32,10 +20,6 @@
       &.header__wrapper {
         width: calc($tablet-width - 40px);
       }
-
-      // &.subscribe {
-      //   width: 632px;
-      // }
     }
 
     @media (min-width: $desktop-width) {
@@ -48,15 +32,8 @@
         width: calc($desktop-width - 80px);
       }
 
-      // &.programs__wrapper,
-      // &.example__wrapper,
-      // &.subscribe,
       &.hero__wrapper {
         width: calc($desktop-width - 210px);
       }
-
-      // &.contacts__wrapper {
-      //   width: 566px;
-      // }
     }
   }

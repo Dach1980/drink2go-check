@@ -2,7 +2,6 @@
   text-decoration: none;
   list-style: none;
   grid-column: 1 / 2;
-  // margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -10,7 +9,6 @@
 }
 
 .logo__img {
-
   display: block;
   max-width: none;
   width: 32px;
@@ -34,7 +32,6 @@
     width: 126px;
     margin-left: 20px;
     list-style: none;
-    // padding-bottom: 5px;
     color: var(--black, #ff6347);
     text-decoration: none;
   }

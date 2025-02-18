@@ -1,8 +1,19 @@
 .hero {
+
   @media (min-width: $desktop-width) {
     background-color: var(--bg-basic, #ff6347);
   }
 }
+
+// @media (max-width: $tablet-width) {
+// .hero {
+//   background-color: var(--bg-basic, #ff6347);
+// }
+
+//   .hero-swiper {
+//     width: 320px;
+//   }
+// }
 
 .hero__card {
   height: auto;
@@ -77,12 +88,15 @@
 .hero__title {
   @include bold-font (36px, 48px); // $font-size, $line-height
   color: var(--black, #ff6347);
-  margin: 0 0 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   letter-spacing: 0.72px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     @include bold-font (56px, 1.43); // $font-size, $line-height
     color: var(--black, #ff6347);
+    width: 100%;
     margin-bottom: 16px;
     letter-spacing: 1.12px;
   }
@@ -107,11 +121,14 @@
   display: block;
   font-weight: 400;
   color: var(--black, #ff6347);
-  margin: 0 0 20px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 32px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,11 +143,14 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  // column-gap: 4px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

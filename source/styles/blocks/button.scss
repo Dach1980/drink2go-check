@@ -10,14 +10,6 @@
   font-style: none;
   text-decoration: none;
 
-
-  // @media (min-width: $tablet-width) {
-  //   @include primary-font (16px, 1.5); // $font-size, $line-height
-  //   width: 113px;
-  //   padding: 8px 20px;
-  //   border-radius: 4px;
-  // }
-
   &:hover,
   &:focus {
     background-color: var(--primary-lighter, #ff6347);
