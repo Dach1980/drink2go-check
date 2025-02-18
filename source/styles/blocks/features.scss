@@ -76,7 +76,7 @@
     background-size: var(--size);
     background-repeat: no-repeat;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(var(--left));
   }
 
   @media (min-width: $tablet-width) {
@@ -122,29 +122,45 @@
 .features__speed {
   --icon: url("../../icons/icon-speed.svg");
   --size: 50px 56px;
-  --top: 40%;
-  --left: 1px;
+  --left: -48%;
+
+  @media (min-width: $tablet-width) {
+    --top: 40%;
+    --left: 1px;
+  }
 }
 
 .features__fit {
   --icon: url("../../icons/icon-fit.svg");
   --size: 52px 56px;
-  --top: 34%;
-  --left: 0;
+  --left: -50%;
+
+  @media (min-width: $tablet-width) {
+    --top: 34%;
+    --left: 0;
+  }
 }
 
 .features__energy {
   --icon: url("../../icons/icon-energy.svg");
   --size: 42px 56px;
-  --top: 28%;
-  --left: 5px;
+  --left: -41%;
+
+  @media (min-width: $tablet-width) {
+    --top: 28%;
+    --left: 5px;
+  }
 }
 
 .features__eco {
   --icon: url("../../icons/icon-eco.svg");
   --size: 46px 56px;
-  --top: 32%;
-  --left: 3px;
+  --left: -45%;
+
+  @media (min-width: $tablet-width) {
+    --top: 32%;
+    --left: 3px;
+  }
 }
 
 .features__name {

@@ -75,7 +75,7 @@
 
 .basic-products__title {
   @include bold-font (24px, 1.5); // $font-size, $line-height
-  color: var(--base-primary, #ff6347);
+  color: var(--black, #ff6347);
   margin: 0;
   text-align: center;
   margin-bottom: 20px;
@@ -87,7 +87,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: var(--black, #ff6347);
     grid-column: 1/-1;
     margin-bottom: 40px;
   }

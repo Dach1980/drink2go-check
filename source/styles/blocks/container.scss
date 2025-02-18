@@ -1,10 +1,10 @@
 .container {
   margin: 0 auto;
   width: $mobile-width;
-  // &.features__wrapper,
+
   // &.programs__wrapper,
   // &.example__wrapper,
-  // &.contacts__wrapper,
+  &.features__wrapper,
   &.footer__wrapper {
       width: calc($mobile-width - 40px);
     }
@@ -22,7 +22,11 @@
       // &.promo__wrapper,
       // &.features__wrapper,
       // &.programs__wrapper,
-      // &.example__wrapper,
+      &.features__wrapper {
+        width: calc($tablet-width - 60px);
+      }
+
+
       &.footer__wrapper,
       &.basic-products__wrapper,
       &.header__wrapper {
