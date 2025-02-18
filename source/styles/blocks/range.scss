@@ -19,9 +19,7 @@
 .range__target[disabled] .range__handle {
   border-color: var(--base-grey, #ff6347);
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:is(:hover, :focus, :active) {
     border-color: var(--base-grey, #ff6347);
 
     &::before {
@@ -37,10 +35,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 11px;
-    bottom: 11px;
-    left: 0;
-    right: -24px;
+    inset: 11px 0 11px -24px; // top, right, bottom, left
     background-color: var(--light-grey, #ff6347);
   }
 }
@@ -85,8 +80,7 @@
     transition: 0.2s ease-in;
   }
 
-  &:hover::before,
-  &:focus::before {
+  &:is(:hover, :focus)::before {
     opacity: 1;
   }
 

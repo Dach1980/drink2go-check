@@ -4,36 +4,36 @@
 
   &.features__wrapper,
   &.footer__wrapper {
-      width: calc($mobile-width - 40px);
-    }
+    width: calc($mobile-width - 40px);
+  }
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    width: calc($tablet-width - 60px);
+
+    &.features__wrapper {
       width: calc($tablet-width - 60px);
-
-      &.features__wrapper {
-        width: calc($tablet-width - 60px);
-      }
-
-
-      &.footer__wrapper,
-      &.basic-products__wrapper,
-      &.header__wrapper {
-        width: calc($tablet-width - 40px);
-      }
     }
 
-    @media (min-width: $desktop-width) {
-      width: calc($desktop-width - 80px);
 
-      &.header__wrapper,
-      &.footer__wrapper,
-      &.features__wrapper,
-      &.basic-products__wrapper {
-        width: calc($desktop-width - 80px);
-      }
-
-      &.hero__wrapper {
-        width: calc($desktop-width - 210px);
-      }
+    &.footer__wrapper,
+    &.basic-products__wrapper,
+    &.header__wrapper {
+      width: calc($tablet-width - 40px);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: calc($desktop-width - 80px);
+
+    &.header__wrapper,
+    &.footer__wrapper,
+    &.features__wrapper,
+    &.basic-products__wrapper {
+      width: calc($desktop-width - 80px);
+    }
+
+    &.hero__wrapper {
+      width: calc($desktop-width - 210px);
+    }
+  }
+}

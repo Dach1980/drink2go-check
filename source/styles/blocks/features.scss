@@ -11,8 +11,8 @@
 }
 
 .features__promo {
-  display: block;
   @include bold-font (12px, 1.33); // $font-size, $line-height
+  display: block;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--base-primary, #ff6347);

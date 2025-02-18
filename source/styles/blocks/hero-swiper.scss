@@ -87,15 +87,15 @@
     height: 20px;
     margin: auto;
     background-color: currentColor;
-    mask-image: url("../../images/icon-button-arrow.svg");
+    mask-image: url("../../icons/stack.svg#icon-button-arrow");
   }
 
   &:hover,
   &:focus {
     background-image:
       linear-gradient(90deg,
-        var(--white, #ff6347) 0%,
-        rgba(255, 255, 255, 0) 100%);
+      var(--white, #ff6347) 0%,
+      rgba(255, 255, 255, 0) 100%);
 
     &:focus {
       outline: none;
@@ -104,8 +104,8 @@
     &:active {
       background-image:
         linear-gradient(90deg,
-          rgba(120, 89, 207, 0.25) 0%,
-          rgba(120, 89, 207, 0) 100%);
+        rgba(120, 89, 207, 0.25) 0%,
+        rgba(120, 89, 207, 0) 100%);
     }
   }
 
