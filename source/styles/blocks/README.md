@@ -7,5 +7,4 @@ _header.scss_
 .header {}
 .header__logo {}
 .header__nav {}
-.header__section {}
 ```
